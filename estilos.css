@@ -11,3 +11,63 @@
 .navbar-brand img{
     height: 90px;
 }
+
+.nav-link{
+    color: rgb(0, 0, 0) !important;
+}
+
+.nav-link:hover{
+    color: rgba(240, 240, 240, 1) !important;
+}
+
+.jumbotron{
+    height: 500px;
+    background-image: url(multimedia/castle-1374916_1280\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    background-color: rgba(174, 221, 148, 1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.nleft{
+    background-image: url(multimedia/bed-1839184_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.refugio{
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.refugio p{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ubicacion p{
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.mapa{
+    background-color: rgba(240, 240, 240, 1);
+}
