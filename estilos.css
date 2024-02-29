@@ -20,7 +20,7 @@
     color: rgba(240, 240, 240, 1) !important;
 }
 
-.jumbotron{
+.jumbotron1{
     height: 500px;
     background-image: url(multimedia/castle-1374916_1280\ \(1\).jpg);
     background-position: center;
@@ -29,19 +29,19 @@
     font-weight: bold;
 }
 
-.jumbotron h1,
-.jumbotron p {
+.jumbotron1 h1,
+.jumbotron1 p {
     /* background-color: rgba(240, 240, 240, 0.56); */
   /* text-shadow: 2px 2px 4px rgb(255, 255, 255); */
   color: rgba(240, 240, 240, 1);
   text-shadow: 3px 2px 9px rgb(0, 0, 0);
 }
 
-.jumbotron h1{
+.jumbotron1 h1{
     font-size: 35px;
 }
 
-.jumbotron p{
+.jumbotron1 p{
     font-size: 25px;
 }
 
@@ -70,9 +70,7 @@
 }
 
 .articulo p{
-    /* border-top: 1px solid #000; */
     font-size: 20px;
-    /* padding: 20px; */
 }
 
 h2{
@@ -82,6 +80,12 @@ h2{
     margin-top: 20px;
     border-radius: 40px;
     font-size: 30px;
+}
+
+@media only screen and (max-width: 992px){
+    h2{
+        font-size: 25px;
+    }
 }
 
 .nleft{
@@ -120,6 +124,70 @@ h2{
 .mapa{
     background-color: rgba(240, 240, 240, 1);
 }
+
+
+/* Refugio Silvestre */
+
+.jumbotron2{
+    height: 500px;
+    background-image: url(multimedia/bedroom-5772286_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+
+.jumbotron2 h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 2px 9px rgb(125, 95, 95);
+    margin-top: 30px;
+}
+
+.sobre-nosotros{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.nosotros h2{
+    margin-left: 20px;
+}
+
+.nosotros p{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+video{
+    padding: 40px 60px 40px 40px;
+}
+
+@media only screen and (max-width: 992px){
+    .sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nosotros h2{
+        margin-right: 20px;
+    }
+
+    .nosotros p{
+        margin-right: 30px;
+    }
+
+    video{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* Footer */
 
 .logo{
     width: 90px;
