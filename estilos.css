@@ -29,16 +29,65 @@
     font-weight: bold;
 }
 
+.jumbotron h1,
+.jumbotron p {
+    /* background-color: rgba(240, 240, 240, 0.56); */
+  /* text-shadow: 2px 2px 4px rgb(255, 255, 255); */
+  color: rgba(240, 240, 240, 1);
+  text-shadow: 3px 2px 9px rgb(0, 0, 0);
+}
+
+.jumbotron h1{
+    font-size: 35px;
+}
+
+.jumbotron p{
+    font-size: 25px;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn{
+    transition: transform 0.5s ease;
+}
+  
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.articulo{
+    text-align: center;
+}
+
+.articulo i{
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.articulo p{
+    /* border-top: 1px solid #000; */
+    font-size: 20px;
+    /* padding: 20px; */
+}
+
 h2{
     text-align: center;
     background-color: rgba(174, 221, 148, 1);
     padding: 20px;
     margin-top: 20px;
+    border-radius: 40px;
+    font-size: 30px;
 }
 
 .nleft{
     background-image: url(multimedia/bed-1839184_1280.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
     height: 500px;
@@ -64,10 +113,61 @@ h2{
 
 .ubicacion p{
     font-size: 20px;
-    margin: 10px;
+    margin: 20px;
     text-align: left;
 }
 
 .mapa{
     background-color: rgba(240, 240, 240, 1);
+}
+
+.logo{
+    width: 90px;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: rgba(174, 221, 148, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.redes{
+    margin-right: 30px;
+}
+
+.redes a{
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: rgba(0, 0, 0);
+}
+
+.redes i{
+    font-size: 30px;
+}
+
+footer a:hover{
+    color: rgba(240, 240, 240, 1);
+}
+
+@media only screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo,
+    .redes{
+        margin: auto;
+    }
+
+    .redes a{
+        margin: 0 5px;
+    }
 }
