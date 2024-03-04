@@ -32,27 +32,17 @@
     font-weight: bold;
 }
 
-.jumbotron1 h1,
-.jumbotron1 p {
+.jumbotron1 h1{
   color: rgba(240, 240, 240, 1);
   text-shadow: 3px 2px 9px rgb(0, 0, 0);
-}
-
-.jumbotron1 h1{
-    font-size: 35px;
-}
-
-.jumbotron1 p{
-    font-size: 25px;
+  font-size: 35px;
 }
 
 .btn{
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.btn{
     transition: transform 0.5s ease;
+    margin-top: 20px;
 }
   
 .btn:hover{
@@ -125,6 +115,12 @@ h2{
     background-color: rgba(240, 240, 240, 1);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .refugio p,
+    .ubicacion p{
+        font-size: 22px;
+    }
+}
 
 /* Refugio Silvestre */
 
@@ -205,6 +201,11 @@ h2{
 
     .alimentos{
         margin-top: 10px;
+    }
+
+    .refugio p,
+    .mapa p{
+        font-size: 20px;
     }
 }
 
@@ -512,7 +513,76 @@ section i{
         grid-column: 3/5;
         grid-row: 3/4;
     }
+}
+
+
+/* Contacto */
+
+.jumbotron5{
+    height: 500px;
+    background-image: url(multimedia/apartment-5346461_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron5 h1{
+    color: rgba(240, 240, 240, 1);
+    text-shadow: 3px 2px 9px rgb(0, 0, 0);
+}
+
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+#contact-form{
+    background-color: rgb(249, 249, 249);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+  
+.contact-info{
+    background-color: rgb(249, 249, 249);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titulos{
+    margin-bottom: 20px;
+}
+
+.container p{
+    font-size: 20px;
+}
+
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+
+#contact-form .btn{
+    background-color: rgba(174, 221, 148, 1);
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(174, 221, 148, 1);
+}
+  
+@media only screen and (max-width: 992px){
+    .contacto{
+      flex-direction: column-reverse;
     }
+
+    .contact-info{
+        margin-bottom: 30px;
+    }
+
+    .container p{
+        font-size: 16px;
+    }
+}
 
 
 /* Footer */
@@ -535,7 +605,7 @@ footer p{
 }
 
 .redes{
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .redes a{
@@ -550,6 +620,21 @@ footer p{
 
 footer a:hover{
     color: rgba(240, 240, 240, 1);
+}
+
+.whatsapp{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 255, 127);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 768px){
